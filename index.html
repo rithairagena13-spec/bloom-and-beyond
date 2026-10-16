@@ -4,97 +4,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bloom & Beyond</title>
+  <title>Bloom &amp; Beyond</title>
   <link href="./src/output.css" rel="stylesheet">
 </head>
 
 <body class="min-h-screen bg-[#F7F5EF] text-[#293B2B]">
 
-
+  <!-- HEADER -->
   <header class="sticky top-0 z-50 bg-[#293B2B] px-6 py-4 text-white shadow-md">
     <nav class="mx-auto flex max-w-6xl items-center justify-between gap-6">
-      <a href="#" class="shrink-0 text-xl font-bold tracking-wide sm:text-2xl">
-        Bloom & Beyond
+      <a href="#home" class="shrink-0 text-xl font-bold tracking-wide sm:text-2xl">
+        Bloom &amp; Beyond
       </a>
 
       <div class="flex items-center gap-4 sm:gap-6">
-        <a href="#home"
-          class="text-sm transition-colors hover:text-[#C9D8B9] focus:outline-2 focus:outline-offset-4 focus:outline-white">
-          Home
-        </a>
-        <a href="#buttons"
-          class="text-sm transition-colors hover:text-[#C9D8B9] focus:outline-2 focus:outline-offset-4 focus:outline-white">
-          Components
-        </a>
-
-        <a href="#alerts"
-          class="text-sm transition-colors hover:text-[#C9D8B9] focus:outline-2 focus:outline-offset-4 focus:outline-white">
-          Alerts
-        </a>
-        <a href="#about"
-          class="text-sm transition-colors hover:text-[#C9D8B9] focus:outline-2 focus:outline-offset-4 focus:outline-white">
-          About
-        </a>
+        <a href="#home" class="text-sm transition-colors hover:text-[#C9D8B9]">Home</a>
+        <a href="#buttons" class="text-sm transition-colors hover:text-[#C9D8B9]">Components</a>
+        <a href="#alerts" class="text-sm transition-colors hover:text-[#C9D8B9]">Alerts</a>
+        <a href="#about" class="text-sm transition-colors hover:text-[#C9D8B9]">About</a>
       </div>
     </nav>
   </header>
 
+  <main id="home" class="mx-auto max-w-6xl px-6 py-12">
 
-  <main class="mx-auto max-w-6xl px-6 py-12">
+    <!-- HERO -->
     <section class="mb-12 text-center">
       <p class="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#66816A]">
         Our UI collection
       </p>
-      <h1 class="mb-4 text-4xl font-bold sm:text-5xl">
-        Bloom & Beyond
-      </h1>
+      <h1 class="mb-4 text-4xl font-bold sm:text-5xl">Bloom &amp; Beyond</h1>
       <p class="mx-auto max-w-2xl text-lg text-[#667064]">
         A reusable collection of buttons, cards, and alerts inspired by nature.
       </p>
     </section>
 
-    <section class="mb-12 rounded-2xl bg-white p-6 shadow-sm sm:p-8">
+    <!-- BUTTONS -->
+    <section id="buttons" class="mb-12 rounded-2xl bg-white p-6 shadow-sm sm:p-8">
       <h2 class="mb-2 text-2xl font-bold">Button Garden</h2>
       <p class="mb-6 text-[#667064]">
         Explore our reusable button styles and interactive states.
       </p>
 
       <div class="flex flex-wrap items-center gap-4">
-        <button class="btn-primary">Shop plants</button>
-        <button class="btn-secondary">Explore garden</button>
-        <button class="btn-outline">Learn more</button>
-        <button class="btn-primary" disabled>Unavailable</button>
+        <button type="button" class="btn-primary">Shop plants</button>
+        <button type="button" class="btn-secondary">Explore garden</button>
+        <button type="button" class="btn-outline">Learn more</button>
+        <button type="button" class="btn-primary" disabled>Unavailable</button>
       </div>
     </section>
 
-
+    <!-- ALERT GARDEN -->
     <section id="alerts" class="mb-12 rounded-2xl bg-white p-6 shadow-sm sm:p-8">
       <p class="mb-2 text-sm font-semibold uppercase tracking-widest text-[#66816A]">
         Clear communication
-    <section class="mb-12 rounded-2xl bg-white p-6 shadow-sm sm:p-8">
-      <h2 class="mb-2 text-2xl font-bold">Growing our library</h2>
-      <p class="text-[#667064]">
-        Next, we will add plant cards, product cards, and success, warning,
-        error, and information alerts.
       </p>
 
-      <h2 class="mb-2 text-2xl font-bold sm:text-3xl">
-        The Alert Garden
-      </h2>
-
+      <h2 class="mb-2 text-2xl font-bold sm:text-3xl">The Alert Garden</h2>
       <p class="mb-6 text-[#667064]">
         Helpful messages to guide every garden experience.
       </p>
 
       <div class="space-y-4">
 
-        <!-- Success alert -->
+        <!-- SUCCESS -->
         <div class="alert alert-success" role="status">
           <svg class="alert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             aria-hidden="true">
             <path d="m5 12 4 4L19 6" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
-
           <div>
             <h3 class="alert-title">Success!</h3>
             <p class="alert-message">
@@ -103,15 +81,14 @@
           </div>
         </div>
 
-        <!-- Warning alert -->
+        <!-- WARNING -->
         <div class="alert alert-warning" role="alert">
           <svg class="alert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             aria-hidden="true">
             <path d="M12 9v4m0 4h.01M10.3 3.9 2.6 17.3
-          A2 2 0 0 0 4.3 20h15.4a2 2 0 0 0 1.7-2.7
-          L13.7 3.9a2 2 0 0 0-3.4 0Z" stroke-linecap="round" stroke-linejoin="round" />
+              A2 2 0 0 0 4.3 20h15.4a2 2 0 0 0 1.7-2.7
+              L13.7 3.9a2 2 0 0 0-3.4 0Z" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
-
           <div>
             <h3 class="alert-title">A little reminder</h3>
             <p class="alert-message">
@@ -120,14 +97,13 @@
           </div>
         </div>
 
-        <!-- Error alert -->
+        <!-- ERROR -->
         <div class="alert alert-error" role="alert">
           <svg class="alert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             aria-hidden="true">
             <circle cx="12" cy="12" r="10" />
             <path d="m15 9-6 6m0-6 6 6" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
-
           <div>
             <h3 class="alert-title">Something went wrong</h3>
             <p class="alert-message">
@@ -136,14 +112,13 @@
           </div>
         </div>
 
-        <!-- Information alert -->
+        <!-- INFORMATION -->
         <div class="alert alert-info" role="status">
           <svg class="alert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             aria-hidden="true">
             <circle cx="12" cy="12" r="10" />
             <path d="M12 16v-4m0-4h.01" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
-
           <div>
             <h3 class="alert-title">Garden tip</h3>
             <p class="alert-message">
@@ -155,149 +130,89 @@
       </div>
     </section>
 
-    <p class="text-[#667064]">
-      Next, we will add plant cards, product cards, and success, warning,
-      error, and information alerts.
-    </p>
-    </section>
-
-
-  <footer class="border-t border-[#DDE3D8] bg-[#293B2B] px-6 py-8 text-center text-white">
-    <h2 class="mb-2 text-xl font-bold">Bloom & Beyond</h2>
-    <p class="mb-4 text-sm text-[#E5EBDD]">
-      Grow something beautiful.
-    </p>
-    <p class="text-xs text-[#D3DFC9]">
-      © 2026 Bloom & Beyond. All rights reserved.
-    </p>
-  </footer>
-<!-- GARDEN CARDS -->
-<section class="mb-12 rounded-2xl border border-[#DDE3D8] bg-white p-5 sm:p-8 lg:p-10">
-
-  <div class="mb-8">
-    <p class="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-[#66816A]">
-      Our collection
-    </p>
-
-    <h2 class="mb-2 text-3xl font-bold tracking-tight text-[#293B2B] sm:text-4xl">
-      Garden Cards
-    </h2>
-
-    <p class="max-w-2xl text-sm leading-6 text-[#667064] sm:text-base">
-      Discover our favorite plants and meet our gardening experts.
-    </p>
-  </div>
-
-  <!-- Responsive two-card grid -->
-  <div class="grid grid-cols-1 items-stretch gap-6 lg:grid-cols-2 lg:gap-8">
-
-    <!-- PRODUCT CARD -->
-    <article class="card">
-
-      <!-- Small, consistent product image -->
-      <img
-        src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=900&q=80"
-        alt="Green indoor Monstera plant"
-        class="card-image"
-      >
-
-      <!-- Product content -->
-      <div class="card-body">
-
-        <div>
-          <span class="mb-3 inline-block rounded-full bg-[#E5EBDD] px-3 py-1 text-xs font-semibold text-[#293B2B]">
-            Indoor plant
-          </span>
-
-          <h3 class="card-title">
-            Monstera Deliciosa
-          </h3>
-
-          <p class="card-text">
-            Add a tropical touch to your home with this beautiful green plant.
-            Its distinctive leaves make it a lovely choice for indoor spaces.
-          </p>
-        </div>
-
-        <!-- Footer stays at the bottom -->
-        <div class="card-footer">
-          <span class="text-xl font-bold text-[#293B2B]">
-            $24.00
-          </span>
-
-          <button type="button" class="btn-primary">
-            View plant <span aria-hidden="true" class="ml-2">→</span>
-          </button>
-        </div>
-
-      </div>
-    </article>
-
-    <article class="card">
-
-     
-      <div class="profile-banner">
-
-        <img
-          src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
-          alt="Portrait of a gardening expert"
-          class="profile-avatar"
-        >
-
-        <h3 class="text-xl font-bold text-white">
-          Sarah Green
-        </h3>
-
-        <p class="mt-1 text-sm text-[#D3DFC9]">
-          Plant Care Specialist
+    <!-- GARDEN CARDS -->
+    <section class="mb-12 rounded-2xl border border-[#DDE3D8] bg-white p-5 sm:p-8 lg:p-10">
+      <div class="mb-8">
+        <p class="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-[#66816A]">
+          Our collection
         </p>
-
+        <h2 class="mb-2 text-3xl font-bold tracking-tight sm:text-4xl">
+          Garden Cards
+        </h2>
+        <p class="max-w-2xl text-sm leading-6 text-[#667064] sm:text-base">
+          Discover our favorite plants and meet our gardening experts.
+        </p>
       </div>
 
-      <!-- Profile content -->
-      <div class="card-body">
+      <div class="grid grid-cols-1 items-stretch gap-6 lg:grid-cols-2 lg:gap-8">
 
-        <div>
-          <span class="mb-3 inline-block rounded-full bg-[#E5EBDD] px-3 py-1 text-xs font-semibold text-[#293B2B]">
-            Meet our expert
-          </span>
+        <!-- PRODUCT CARD -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=900&q=80"
+            alt="Green indoor Monstera plant" class="card-image">
 
-          <h3 class="card-title">
-            Your Gardening Guide
-          </h3>
+          <div class="card-body">
+            <div>
+              <span class="mb-3 inline-block rounded-full bg-[#E5EBDD] px-3 py-1 text-xs font-semibold">
+                Indoor plant
+              </span>
+              <h3 class="card-title">Monstera Deliciosa</h3>
+              <p class="card-text">
+                Add a tropical touch to your home with this beautiful green plant.
+                Its distinctive leaves make it a lovely choice for indoor spaces.
+              </p>
+            </div>
 
-          <p class="card-text">
-            Sarah shares practical tips on choosing plants, watering correctly,
-            and creating beautiful green spaces at home.
-          </p>
-        </div>
+            <div class="card-footer">
+              <span class="text-xl font-bold">$24.00</span>
+              <button type="button" class="btn-primary">
+                View plant <span aria-hidden="true" class="ml-2">→</span>
+              </button>
+            </div>
+          </div>
+        </article>
 
-        <!-- Footer stays at the bottom -->
-        <div class="card-footer">
-          <span class="text-sm font-medium text-[#667064]">
-            Plant care expert
-          </span>
+        <!-- GARDENING EXPERT CARD -->
+        <article class="card">
+          <div class="profile-banner">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+              alt="Portrait of a gardening expert" class="profile-avatar">
+            <h3 class="text-xl font-bold text-white">Sarah Green</h3>
+            <p class="mt-1 text-sm text-[#D3DFC9]">Plant Care Specialist</p>
+          </div>
 
-          <button type="button" class="btn-secondary">
-            View profile <span aria-hidden="true" class="ml-2">→</span>
-          </button>
-        </div>
+          <div class="card-body">
+            <div>
+              <span class="mb-3 inline-block rounded-full bg-[#E5EBDD] px-3 py-1 text-xs font-semibold">
+                Meet our expert
+              </span>
+              <h3 class="card-title">Your Gardening Guide</h3>
+              <p class="card-text">
+                Sarah shares practical tips on choosing plants, watering correctly,
+                and creating beautiful green spaces at home.
+              </p>
+            </div>
+
+            <div class="card-footer">
+              <span class="text-sm font-medium text-[#667064]">Plant care expert</span>
+              <button type="button" class="btn-secondary">
+                View profile <span aria-hidden="true" class="ml-2">→</span>
+              </button>
+            </div>
+          </div>
+        </article>
 
       </div>
-    </article>
-
-  </div>
-</section>
+    </section>
 
   </main>
 
-  <footer class="border-t border-[#DDE3D8] bg-[#293B2B] px-6 py-8 text-center text-white">
-    <h2 class="mb-2 text-xl font-bold">Bloom & Beyond</h2>
-    <p class="mb-4 text-sm text-[#E5EBDD]">
-      Grow something beautiful.
-    </p>
+  <!-- FOOTER -->
+  <footer id="about" class="border-t border-[#DDE3D8] bg-[#293B2B] px-6 py-8 text-center text-white">
+    <h2 class="mb-2 text-xl font-bold">Bloom &amp; Beyond</h2>
+    <p class="mb-4 text-sm text-[#E5EBDD]">Grow something beautiful.</p>
     <p class="text-xs text-[#D3DFC9]">
-      © 2026 Bloom & Beyond. All rights reserved.
+      © 2026 Bloom &amp; Beyond. All rights reserved.
     </p>
   </footer>
 
